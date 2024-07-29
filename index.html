@@ -9,6 +9,8 @@
         integrity="sha512-...your-integrity-hash-here..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c991f90e06.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg">
 
 
 </head>
@@ -28,7 +30,7 @@
             </label>
             <ul>
                 <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -38,24 +40,69 @@
     <main>
         <section class="home">
             <div class="content">
-                <h1>VTA ARCHITECT</h1>
+                <h1>Vũ Tuấn Anh</h1>
                 <p>Architects & Engineers</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn" id="readMoreBtn">Xem Thêm</a>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="content_an" id="contentAn">
+                <span class="close" id="closeBtn">&times;</span>
+                <h2>Học Vấn và Kinh Nghiệm</h2>
+                <p>Tôi tốt nghiệp từ Đại học Kiến trúc Hà Nội, nơi đã trang bị cho tôi nền tảng kiến thức vững chắc và
+                    kỹ năng chuyên môn trong lĩnh vực kiến trúc. Với nhiều năm kinh nghiệm làm việc tại Inno, tôi đã có
+                    cơ hội tham gia và dẫn dắt nhiều dự án quy mô lớn và đa dạng, từ thiết kế nhà ở, văn phòng đến các
+                    công trình công cộng và thương mại.</p>
+                <h2>Tầm Nhìn và Sứ Mệnh</h2>
+                <p>Tôi luôn tin rằng kiến trúc không chỉ là nghệ thuật mà còn là khoa học, cần sự kết hợp hài hòa giữa
+                    thẩm mỹ và công năng. Mỗi dự án tôi tham gia đều là một cơ hội để tôi thể hiện sự sáng tạo và đam mê
+                    nghề nghiệp, nhằm tạo ra những không gian sống và làm việc lý tưởng cho cộng đồng.</p>
+                <h2>Giá Trị Mang Lại</h2>
+                <p>Tôi luôn nỗ lực mang đến những giải pháp thiết kế sáng tạo, bền vững và tối ưu nhất cho khách hàng.
+                    Tôi luôn sẵn sàng đón nhận những thử thách mới và không ngừng học hỏi để hoàn thiện bản thân, nhằm
+                    mang lại giá trị cao nhất cho các dự án và khách hàng của mình.</p>
+                <h2>Kết Nối Với tôi</h2>
+                <p>Nếu bạn có bất kỳ câu hỏi nào hoặc muốn hợp tác, hãy liên hệ với tôi qua các thông tin dưới đây. Tôi
+                    luôn sẵn lòng chia sẻ và hỗ trợ.</p>
+                <span><a href="https://www.facebook.com/tuananhvu13">Facebook</a></span>
+                <span></span>
+                <span><a href="https://zalo.me/0983756010">Zalo</a></span>
             </div>
         </section>
-        <section class="about">
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Về chúng tôi</h1>
                         <p>
-                            Đội ngũ kiến trúc sư và thiết kế của chúng tôi sẽ làm việc với bạn để tạo ra một không gian
-                            không chỉ đẹp mà còn có chức năng. Chúng tôi sẽ giúp bạn đưa tầm nhìn của mình vào cuộc
-                            sống, cho dù bạn đang tìm cách cải tạo nhà hay xây dựng một ngôi nhà mới. Mục tiêu của chúng
-                            tôi là tạo ra một không gian mà bạn sẽ yêu thích trong nhiều năm tới.</p>
+                            Đội ngũ kiến trúc sư và thiết kế của chúng tôi cam kết mang đến cho bạn những không gian
+                            không chỉ đẹp mà còn đầy đủ chức năng. Chúng tôi hiểu rằng mỗi dự án đều là duy nhất và đáng
+                            quý, vì vậy chúng tôi sẽ làm việc chặt chẽ với bạn để biến tầm nhìn của bạn thành hiện thực.
+                            Cho dù bạn đang tìm cách cải tạo nhà hiện có hay xây dựng một ngôi nhà mới, chúng tôi đều
+                            sẵn sàng hỗ trợ. Từ việc lên ý tưởng thiết kế, lựa chọn vật liệu cho đến quá trình thi công,
+                            chúng tôi luôn chú trọng đến từng chi tiết nhỏ nhất để đảm bảo kết quả cuối cùng đạt được sự
+                            hoàn hảo.
+                        </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="./assets/images/bg.svg" alt="about">
+                        <img src="./assets/images/bgr3.jpeg" alt="about">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/images/bgr2.jpeg" alt="about">
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <p>Với kinh nghiệm và sự tận tâm, chúng tôi sẽ giúp bạn tạo ra những không gian sống và làm việc
+                            lý tưởng, phản ánh phong cách và nhu cầu riêng của bạn. Chúng tôi không chỉ tạo ra các thiết
+                            kế thẩm mỹ mà còn đảm bảo tính ứng dụng cao, giúp bạn tận dụng tối đa không gian và tạo nên
+                            sự thoải mái, tiện nghi trong cuộc sống hàng ngày. Mục tiêu của chúng tôi là tạo ra những
+                            không gian mà bạn sẽ yêu thích và tự hào trong nhiều năm tới. Hãy để chúng tôi đồng hành
+                            cùng bạn trên hành trình kiến tạo nên những giá trị bền vững và tinh tế, mang lại niềm vui
+                            và sự hài lòng cho bạn và gia đình.</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +121,7 @@
                             <button>Learn More</button>
                         </div>
                         <div class="col-md-6">
-                            <img src="./assets/images/bgr.jpeg" alt="duan1">
+                            <img src="./assets/images/duan1.svg" alt="duan1">
                         </div>
                     </div>
                 </div>
@@ -83,7 +130,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="./assets/images/bgr.jpeg" alt="duan1">
+                            <img src="./assets/images/duan2.svg" alt="duan1">
                         </div>
                         <div class="col-md-6">
                             <h1>Dự Án 2</h1>
@@ -111,7 +158,7 @@
                             <button>Learn More</button>
                         </div>
                         <div class="col-md-6">
-                            <img src="./assets/images/bgr.jpeg" alt="duan1">
+                            <img src="./assets/images/duan3.svg" alt="duan1">
                         </div>
                     </div>
                 </div>
@@ -120,7 +167,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="./assets/images/bgr.jpeg" alt="duan1">
+                            <img src="./assets/images/duan4.svg" alt="duan1">
                         </div>
                         <div class="col-md-6">
                             <h1>Dự Án 4</h1>
@@ -136,6 +183,7 @@
             </section>
         </section>
     </main>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
