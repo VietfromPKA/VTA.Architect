@@ -71,12 +71,139 @@ a:hover {
     display: none;
 }
 
-main {
-    background: url(../images/bg.svg);
-    background-size: cover;
-    height: 90vh;
+section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
 }
 
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #555;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Định dạng riêng cho từng section */
+.duan1 {
+    background-color: #e0f7fa;
+}
+
+.duan2 {
+    background-color: #fce4ec;
+}
+
+.duan3 {
+    background-color: #e8f5e9;
+}
+
+.duan4 {
+    background-color: #f3e5f5;
+}
+/* Định dạng cho section .home */
+.home {
+    background: url("../images/bg.svg") no-repeat center center/cover;
+    color: #fff;
+}
+
+.home .content {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.home .btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+    background-color: #555;
+}
+
+/* Định dạng cho section .about */
+.about {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .col-md-6 {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 @media (max-width: 952px) {
     label.logo {
@@ -127,5 +254,30 @@ main {
 
     #check:checked~ul {
         left: 0;
+    }
+    section {
+        padding: 30px 10px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    section img {
+        margin: 0 auto;
+    }
+    
+    .container .row {
+        flex-direction: column;
+    }
+    
+    .container .row > div {
+        margin-bottom: 20px;
     }
 }
