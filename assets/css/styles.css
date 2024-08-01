@@ -436,6 +436,18 @@ section img {
     animation: myfirst 20s linear infinite;
 }
 
+.new_footer_top .footer_bg .footer_bg_four {
+    background: url("../images/contact.gif") no-repeat center center;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    bottom: 65px;
+    left: 25%;
+    position: absolute;
+    -webkit-animation: myfirst 40s linear infinite;
+    animation: myfirst 40s linear infinite;
+}
+
 .new_footer_bottom {
     text-align: center;
     background-color: #22222200;
