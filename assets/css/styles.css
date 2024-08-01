@@ -306,8 +306,8 @@ section img {
     position: absolute;
     bottom: -105px;
     left: 30%;
-    -webkit-animation: myfirst 22s linear infinite;
-    animation: myfirst 22s linear infinite;
+    -webkit-animation: myfirst 25s linear infinite;
+    animation: myfirst 25s linear infinite;
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
@@ -320,6 +320,18 @@ section img {
     position: absolute;
     -webkit-animation: myfirst 30s linear infinite;
     animation: myfirst 30s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_three {
+    background: url("../images/maybay.gif") no-repeat center center;
+    width: 200px;
+    height: 200px;
+    background-size:100%;
+    bottom: 150px;
+    left: 25%;
+    position: absolute;
+    -webkit-animation: myfirst 20s linear infinite;
+    animation: myfirst 20s linear infinite;
 }
 
 
