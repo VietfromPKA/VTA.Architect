@@ -459,7 +459,7 @@ iframe {
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 819px) {
     .checkbtn {
         display: block;
     }
