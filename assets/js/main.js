@@ -37,7 +37,6 @@ window.onclick = function(event) {
     }
 }
 
-
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -48,7 +47,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         project: document.getElementById('project').value,
     };
 
-    fetch('http://localhost:3000/submit-form', {
+    fetch('https://script.google.com/macros/s/AKfycbxwDe4IpA7eqmbDjQJPK5LvBu7OggUiz6zVPHaxvkZuorGOtzINi3mkTCoPf-13yPI66w/exec', { // Thay thế bằng URL Web App của bạn
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -60,11 +59,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         if (data.success) {
             alert('Form submitted successfully!');
         } else {
-            alert('Form submission failed.');
+            alert('Form submission failed: ' + (data.message || 'Unknown error'));
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Form submission failed.');
+        alert('Form submission failed. See console for details.');
     });
 });
+
