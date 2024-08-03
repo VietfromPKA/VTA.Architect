@@ -36,3 +36,35 @@ window.onclick = function(event) {
         document.getElementById('tvContent').style.display = 'none';
     }
 }
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        project: document.getElementById('project').value,
+    };
+
+    fetch('http://localhost:3000/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Form submitted successfully!');
+        } else {
+            alert('Form submission failed.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Form submission failed.');
+    });
+});

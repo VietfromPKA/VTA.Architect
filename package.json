@@ -1,0 +1,17 @@
+{
+    "name": "vta-architect",
+    "version": "1.0.0",
+    "description": "VTA Architect website",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.19.2",
+        "xlsx": "^0.16.9"
+    },
+    "author": "",
+    "license": "ISC",
+    "keywords": []
+}
