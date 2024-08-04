@@ -39,9 +39,10 @@ window.onclick = function(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('submit-form');
+    const URL = 'https://script.google.com/macros/s/AKfycbwZYEWAtU73EN2PpbtC4igl1qFF_8ZHjI6gST_LaWS8oaIhjM--YJmBkbeuRhBKtP4W/exec';
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      fetch('https://script.google.com/macros/s/AKfycbyIVQyJyF9ps4a0zNboEmvFxqxEYBgLv8sey_Gq0RzbXMFwPXyqDO9ae9LBIuW8Mzqf/exec', {
+      fetch(URL, {
         method: 'POST',
         body: new FormData(form)
       }).then(response => {
