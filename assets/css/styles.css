@@ -54,6 +54,7 @@ a:hover {
     transition: .5s;
     box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
     text-decoration: none; /* Bỏ gạch chân khi hover */
+    text-transform: uppercase;
 }
 
 .checkbtn {
@@ -99,7 +100,13 @@ section button {
 }
 
 section button:hover {
-    background-color: #555;
+    color: #030303;
+    font-weight: 100;
+    background: linear-gradient(90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
+    transition: .5s;
+    box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
+    text-decoration: none; /* Bỏ gạch chân khi hover */
+    text-transform: uppercase;
 }
 
 section img {
@@ -160,9 +167,6 @@ section img {
     transition: background-color 0.3s ease;
 }
 
-.home .content .btn:hover {
-    background-color: #555;
-}
 
 .home .content_an {
     position: fixed;
@@ -199,10 +203,17 @@ section img {
     font-size: 1.1rem;
     color: #007bff;
     cursor: pointer;
-}
+    text-decoration: none; /* Bỏ gạch chân khi hover */
 
-.home .content_an span:hover {
-    text-decoration: underline;
+}
+.home .content_an a:hover{
+    color: #000000;
+    font-weight: 100;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
+    transition: .5s;
+    box-shadow: 1px rgba(2, 2, 92, 0.354);
+    text-decoration: none; /* Bỏ gạch chân khi hover */
 }
 
 .home .content_an .close {
@@ -266,16 +277,7 @@ section img {
     border-radius: 10px;
 }
 
-@media (max-width: 952px) {
-    label.logo {
-        font-size: 18px;
-        padding-left: 50px;
-    }
 
-    nav ul li a {
-        font-size: 16px;
-    }
-}
 
 /* css footer */
 .new_footer_area {
@@ -307,17 +309,8 @@ section img {
     margin-top: 20px;
 }
 
-.btn_dky {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
 
-.btn_dky:hover {
-    background-color: #218838;
-}.tv_content {
+.tv_content {
     display: none;
     position: fixed;
     top: 0;
@@ -335,7 +328,7 @@ section img {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 500px;
     position: relative;
 }
 
@@ -551,5 +544,9 @@ section img {
     
     .container .row > div {
         margin-bottom: 20px;
+    }
+
+    .form_container{
+        width: 300px;
     }
 }
