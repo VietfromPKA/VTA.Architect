@@ -317,53 +317,72 @@ section img {
 
 .btn_dky:hover {
     background-color: #218838;
-}
-/* Nội dung form tư vấn */
-.tv_content {
-    display: none; /* Ẩn mặc định */
+}.tv_content {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền tối với độ trong suốt */
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Đảm bảo form nằm trên các phần tử khác */
 }
 
-/* Khung chứa form */
 .form_container {
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: white;
     padding: 20px;
-    width: 80%; /* Đảm bảo đủ không gian cho nội dung */
-    max-width: 800px;
-    max-height: 90%; /* Giới hạn chiều cao tối đa của form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     position: relative;
-    overflow: hidden; /* Ẩn thanh cuộn */
 }
 
-iframe {
-    width: 100%;
-    border: none;
-}
-
-/* Nút đóng */
 .close_btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
-    color: #333;
+    font-size: 20px;
     cursor: pointer;
 }
 
-.close_btn:hover {
-    color: #ff0000;
+.form_container h2 {
+    text-align: center;
+    color: #333;
 }
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form_container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form_container input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form_container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form_container button:hover {
+    background-color: #218838;
+}
 .new_footer_top {
     padding: 120px 0px 270px;
     position: relative;

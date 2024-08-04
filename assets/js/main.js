@@ -37,34 +37,21 @@ window.onclick = function(event) {
     }
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        project: document.getElementById('project').value,
-    };
-
-    fetch('https://script.google.com/macros/s/AKfycbxwDe4IpA7eqmbDjQJPK5LvBu7OggUiz6zVPHaxvkZuorGOtzINi3mkTCoPf-13yPI66w/exec', { // Thay thế bằng URL Web App của bạn
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('submit-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch('https://script.google.com/macros/s/AKfycbyIVQyJyF9ps4a0zNboEmvFxqxEYBgLv8sey_Gq0RzbXMFwPXyqDO9ae9LBIuW8Mzqf/exec', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Form submitted successfully!');
+        body: new FormData(form)
+      }).then(response => {
+        if (response.ok) {
+          alert('Form submitted successfully!');
+          form.reset();
         } else {
-            alert('Form submission failed: ' + (data.message || 'Unknown error'));
+          alert('Error submitting form');
         }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Form submission failed. See console for details.');
+      });
     });
-});
-
+  });
+  
