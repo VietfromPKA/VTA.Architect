@@ -408,6 +408,7 @@ section img {
     left: 30%;
     -webkit-animation: myfirst 25s linear infinite;
     animation: myfirst 25s linear infinite;
+    z-index: 4;
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
@@ -420,6 +421,7 @@ section img {
     position: absolute;
     -webkit-animation: myfirst 30s linear infinite;
     animation: myfirst 30s linear infinite;
+    z-index: 5;
 }
 
 .new_footer_top .footer_bg .footer_bg_three {
@@ -432,6 +434,7 @@ section img {
     position: absolute;
     -webkit-animation: myfirst 20s linear infinite;
     animation: myfirst 20s linear infinite;
+    z-index: 2;
 }
 
 .new_footer_top .footer_bg .footer_bg_four {
@@ -444,6 +447,7 @@ section img {
     position: absolute;
     -webkit-animation: myfirst 45s linear infinite;
     animation: myfirst 45s linear infinite;
+    z-index: 3;
 }
 
 .new_footer_bottom {
