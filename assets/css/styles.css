@@ -551,6 +551,7 @@ section button:hover {
 
     section button {
         font-size: 0.9rem;
+        margin: 8px 16px;
     }
 
     .home .content_an {
