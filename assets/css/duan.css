@@ -32,15 +32,10 @@ main {
 /* Các phần nội dung */
 .text{
     background-color: #dbc1c1ab;
-    padding: 5% 38% 0 38%;
 }
 .text-ct{
-    color: #138704; /* Màu xanh sáng */
     text-align: center;
-    font-size: 2em;
-    padding: 20px;
-    border : 2px dashed black;
-    border-radius: 15px;
+    
 }
 .content-section {
     display: flex;
@@ -55,7 +50,7 @@ main {
     flex: 1 1 40%;
     padding: 30px;
 }
-
+.text-ct h3,
 .text-content1 h3,
 .text-content h3 {
     font-size: 2em;
