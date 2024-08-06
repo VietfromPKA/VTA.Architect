@@ -30,6 +30,18 @@ main {
 }
 
 /* Các phần nội dung */
+.text{
+    background-color: #dbc1c1ab;
+    padding: 5% 38% 0 38%;
+}
+.text-ct{
+    color: #138704; /* Màu xanh sáng */
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    border : 2px dashed black;
+    border-radius: 15px;
+}
 .content-section {
     display: flex;
     flex-wrap: wrap;
@@ -37,30 +49,36 @@ main {
     background-color: #dbc1c1ab;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.text-content1,
 .text-content,
 .image-content {
-    flex: 1 1 50%;
+    flex: 1 1 40%;
     padding: 30px;
 }
 
+.text-content1 h3,
 .text-content h3 {
     font-size: 2em;
     margin-bottom: 15px;
     color: #138704; /* Màu xanh sáng */
 }
-
+.text-content1 ul
 .text-content ul {
     list-style-type: none;
     padding: 0;
 }
-
+.text-content1 ul li,
 .text-content ul li {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #343a40;
 }
-
+.text-content1 ul li ul li{
+    padding-left: 35px;
+    font-size: 1em;
+    margin: 20px 0;
+    color: #343a40;
+}
 .image-content img {
     width: 100%;
     height: auto;

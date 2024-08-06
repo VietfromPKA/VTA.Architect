@@ -56,3 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+//btn chuyển dự án
+document.getElementById("btn_duan2").onclick = function () {
+  window.location.href = "./assets/html/duan2.html";
+};
